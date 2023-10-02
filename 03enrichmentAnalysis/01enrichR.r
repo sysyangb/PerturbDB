@@ -40,7 +40,7 @@ for(key in genelist){
   if(key!="NT"){
     tryCatch({
       print(paste0("Processing ",key))
-      wiki <- DEenrichRPlot(
+      kegg <- DEenrichRPlot(
         sub,
         ident.1 = key,
         ident.2 = "NT",
@@ -58,7 +58,7 @@ for(key in genelist){
         num.pathway = 10,
         return.gene.list = TRUE,
       )
-      write.table(as.data.frame(wiki),file = paste0(key,".Top10kegg.txt"),sep = '\t',row.names = F)
+      write.table(as.data.frame(kegg),file = paste0(key,".Top10kegg.txt"),sep = '\t',row.names = F)
     },
     finally = {
       next
