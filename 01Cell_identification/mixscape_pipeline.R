@@ -66,11 +66,10 @@ for(i in 1:NROW(metainfo)){
 # Create a new object and add meta-information such as cell cycle.
 marrow <- CreateSeuratObject(counts = exp.mat)
 
-#添加基因信息,和gem group[相当于批次?]信息,以及处理/对照信息
 marrow@meta.data = cbind(marrow@meta.data,metainfo[row.names(marrow@meta.data),]$gem_group,metainfo[row.names(marrow@meta.data),]$gene
                          ,metainfo[row.names(marrow@meta.data),]$crispr,marrow2@meta.data[row.names(marrow@meta.data),]$S.Score,
                          marrow2@meta.data[row.names(marrow@meta.data),]$G2M.Score,marrow2@meta.data[row.names(marrow@meta.data),]$Phase)
-#修改列名
+# Modify column names.
 colnames(marrow@meta.data)[4] <- "gem_group"
 marrow@meta.data$gem_group <- as.factor(marrow@meta.data$gem_group)
 colnames(marrow@meta.data)[5] <- "gene"
