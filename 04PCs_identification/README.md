@@ -1,0 +1,1 @@
+PRTB_PCA refers to the results obtained after dimension reduction of the perturbation feature matrix calculated using Mixscape. We average the features of a group of cells and then obtain the perturbation gene feature matrix, named average_pca.txt.
