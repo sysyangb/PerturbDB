@@ -7,7 +7,6 @@ library(Seurat)
 library(SingleCellExperiment)
 library(DESeq2)
 library(RColorBrewer)
-library(org.Hs.eg.db)
 library(gplots)
 library(PGSEA)
 ```
