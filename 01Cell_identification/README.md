@@ -5,6 +5,7 @@ The scripts in this folder are used to identify cell perturbation and non-pertur
 ## Cell annotated file: [metainfo.txt.gz](http://research.gzsys.org.cn/perturbdb/data/publications/SC00004/githubDemo/metainfo.txt.gz)
 
 Make sure that you have installed the following R package dependencies.
+<br >
 ```R
 library(Seurat)
 library(SeuratDisk)
@@ -19,10 +20,8 @@ library(mixtools)
 library(data.table)
 library(future)
 ```
-<br>
-Place the three files from this directory and the RDS file in the same directory level, you can run the following script to perform the analysis.
-<br>
+Place the three files in the same directory level, you can run the following script to perform analysis
 ```R
-Rscript mixscape_pipeline.R
+   Rscript mixscape_pipeline.R
 ```
 
