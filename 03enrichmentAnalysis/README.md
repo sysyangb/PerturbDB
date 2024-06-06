@@ -6,6 +6,7 @@ First, ensure that you have installed the following R package dependencies.
 library(Seurat)
 library(SingleCellExperiment)
 library(DESeq2)
+library(org.Hs.eg.db)
 library(RColorBrewer)
 library(gplots)
 library(PGSEA)
