@@ -13,6 +13,8 @@ library(future)
 
 args <- commandArgs(TRUE)
 
+args[1] <- "6"
+
 # Set multi-threading parameters
 plan("multicore", workers = 20)
 options(future.globals.maxSize = 400 * 1000 * 1024^2)
